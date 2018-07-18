@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/frisio/eva-visual-language-system#readme",
   "devDependencies": {
+    "node-sass": "^4.9.2",
     "parcel-bundler": "^1.9.7"
+  },
+  "dependencies": {
+    "theme": "^0.1.0"
   }
 }
