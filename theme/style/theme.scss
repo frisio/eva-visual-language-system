@@ -1,6 +1,10 @@
-@import 'reset.scss'; 
-@import 'base.scss';
+@import 'reset'; 
+@import 'variables';
+@import 'base';
 
-@import 'atoms/links.scss';
+@import 'atoms/links';
 
-@import 'molecules/nav.scss'; 
+@import 'organisms/content';
+@import 'organisms/footer';
+@import 'organisms/logo';
+@import 'organisms/nav'; 

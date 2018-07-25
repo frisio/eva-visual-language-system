@@ -2,12 +2,11 @@ main-nav {
 	grid-area: main-nav;
 
 	a {
-		padding: 1rem;
-		font-size: 3rem;
+		padding: 2rem;
 	}
 
 	.active {
-	  border-bottom: 3px solid #ccc;	
+	  border-bottom: 3px solid $color-primary;	
 	}
 
 }
@@ -18,5 +17,6 @@ side-nav {
 
 	a {
 		display: block;
+		padding: 2rem 0;
 	}
 }
