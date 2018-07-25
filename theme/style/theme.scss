@@ -2,7 +2,10 @@
 @import 'variables';
 @import 'base';
 
+@import 'atoms/break';
+@import 'atoms/headings';
 @import 'atoms/links';
+@import 'atoms/text';
 
 @import 'organisms/content';
 @import 'organisms/footer';
