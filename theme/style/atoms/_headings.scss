@@ -2,6 +2,7 @@ h1 {
 	font-size: 5rem;
 	font-weight: 500;
 	margin-bottom: 3rem;
+	color: $color-headings;
 }
 
 h2 {
@@ -9,4 +10,14 @@ h2 {
 	font-weight: 300;
 	margin-bottom: 2rem;
 	line-height: 1.3em;
+	color: $color-headings;
+}
+
+h3 {
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	margin-bottom: 0.3rem;
+	line-height: 1.3em;
+	color: $color-headings;
+	font-weight: 500;
 }

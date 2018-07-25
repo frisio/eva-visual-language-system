@@ -19,4 +19,8 @@ side-nav {
 		display: block;
 		padding: 2rem 0;
 	}
+
+	.active {
+		color: $color-primary;
+	}
 }
