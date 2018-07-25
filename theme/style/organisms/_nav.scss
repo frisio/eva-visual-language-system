@@ -2,7 +2,8 @@ main-nav {
 	grid-area: main-nav;
 
 	a {
-		padding: 2rem;
+		margin: 2rem 2rem 0;
+		padding-bottom: 1rem;
 	}
 
 	.active {
@@ -17,10 +18,12 @@ side-nav {
 
 	a {
 		display: block;
-		padding: 2rem 0;
+		padding: 1rem 0;
+		color: $color-primary;
+		margin-bottom: 2rem;
 	}
 
 	.active {
-		color: $color-primary;
+		border-bottom: 1px solid #ccc;
 	}
 }

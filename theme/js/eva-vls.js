@@ -2,31 +2,24 @@
 import '../../theme/style/theme.scss';
 
 const init = () => {
+
 	var path = location.pathname.split('/');
 	if(!path[1]) path = 'guides';
+	
 	document.querySelector(`main-nav a[href^="/${path[1]}"]`).classList.add('active');
 	document.querySelector(`side-nav.${path[1]}`).style.display = 'block';
 	document.querySelector(`side-nav a[href^="/${path[1]}/${path[2]}"]`).classList.add('active');
 	document.body.classList.add(`page-${path[1]}`);
 
 	const html_page = path.join('_').substr(1);
-	let content = '';
+	const page = document.getElementById(`page-${html_page}`);
 
-	fetch(`/pages/${html_page}.html`).then((response) => {
-		if (!response.ok) {
-            updateContent(`<p>Page not found..</p>`);
-            return;
-        }
-		response.text().then((text) => {
-		  updateContent(text);
-		});
-	});
+	if(page) {
+		const content = page.import.querySelector('page-content');
+	    document.querySelector('content').appendChild(document.importNode(content, true));	
+	}
 
+	hljs.initHighlightingOnLoad();
 }
 
-const updateContent = (text) => {
-	document.querySelector(`content`).innerHTML = text;
-}
-
-window.onload = () =>
-	init();
+window.onload = () => init();

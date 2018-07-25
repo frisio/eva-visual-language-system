@@ -21,7 +21,8 @@ page {
   	gap: 5rem 2rem;
 }
 
-parcel-only {
-  display: none;
+code { 
+  display: block;
+  background-color: #eee;
+  padding: 2rem;
 }
-
